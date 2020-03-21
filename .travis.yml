@@ -14,3 +14,6 @@ install:
 
 after_success:
   - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then firebase deploy --token $FIREBASE_TOKEN; fi'
+
+notifications:
+  slack: brosstartup:$SLACK_TOKEN
