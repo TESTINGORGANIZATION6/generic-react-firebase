@@ -3,7 +3,7 @@ import { Jumbotron, Container } from 'react-bootstrap'
 
 const Template = () => {
   return (
-    <Jumbotron fluid className="bg-primary">
+    <Jumbotron fluid className="bg-primary templateBox">
       <Container className="text-white">
         <h1 className="text-center">Join Coderlust</h1>
         <div className="border-top my-4"></div>
