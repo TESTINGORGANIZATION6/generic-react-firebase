@@ -127,3 +127,83 @@ transition: 1s;
 .cardview .box:hover .content{
   color: white;
 }
+
+.inputbox{
+  position: relative;
+  width: 100%;
+  height: 40px;
+margin: 30px 0 10px;
+padding: 0 10px;
+}
+.inputbox input,
+.inputbox.textarea textarea{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0 10px;
+  z-index: 1;
+}
+
+.inputbox .text{
+  position: absolute;
+  top:0;
+  left: 0;
+  line-height: 40px;
+  font-size: 18px; 
+  padding: 0 10px;
+  display: block;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.inputbox input:focus + .text,
+.inputbox input:valid + .text
+ {
+  top:-35px;
+  left: -10px;
+}
+
+.inputbox .line{
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  background: white;
+  transition: 0.5s;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.inputbox.textarea{
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: 10px 0;
+}
+.inputbox.textarea textarea{
+  height: 100%;
+  resize: none;
+}
+
+.inputbox textarea:focus + .text,
+.inputbox textarea:valid + .text
+ {
+  top:-35px;
+  left: -10px;
+
+
+}
+.inputbox input:focus ~.line,
+.inputbox input:valid ~.line{
+  height: 100%;
+}
+.inputbox textarea:focus ~.line,
+.inputbox textarea:valid ~.line{
+  height: 100%;
+}
+
