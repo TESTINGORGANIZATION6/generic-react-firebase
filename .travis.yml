@@ -9,10 +9,12 @@ script:
   - "yarn test"
 
 install:
+  if: branch = master
   - npm install -g firebase-tools
   - npm install && npm run build
 
 after_success:
+  if: branch = master
   - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then firebase deploy --token $FIREBASE_TOKEN; fi'
 
 notifications:
