@@ -49,10 +49,8 @@ const ContactUs = () => {
         Query submission failed!! Please try again
       </Alert>
       <Row className="justify-content-md-center p-3 m-0">
-        {/* <Col xs className="mailimg" lg="6">
-        </Col> */}
         <Col xs lg="5">
-          <h2 className="text-center title">Contact Us</h2>
+          <h2 className="text-center title tamplateHeader">Contact Us</h2>
           <Form>
             <Form.Group controlId="formBasicEmail" className="inputbox">
               <Form.Control

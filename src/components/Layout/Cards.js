@@ -6,10 +6,7 @@ const Cards = () => {
     <Container className="cardContainer">
       <Row>
         <Col>
-          <Card
-            className="cardview"
-            style={{ width: '18rem', margin: '0 auto' }}
-          >
+          <Card className="cardview">
             <Card.Body className="box">
               <div className="icon iconred">01</div>
               <div className="content">
@@ -26,10 +23,7 @@ const Cards = () => {
           </Card>
         </Col>
         <Col>
-          <Card
-            className="cardview"
-            style={{ width: '18rem', margin: '0 auto' }}
-          >
+          <Card className="cardview">
             <Card.Body className="box">
               <div className="icon icongreen">02</div>
               <div className="content">
@@ -47,10 +41,7 @@ const Cards = () => {
           </Card>
         </Col>
         <Col>
-          <Card
-            className="cardview"
-            style={{ width: '18rem', margin: '0 auto' }}
-          >
+          <Card className="cardview">
             <Card.Body className="box">
               <div className="icon iconblue">03</div>
               <div className="content">

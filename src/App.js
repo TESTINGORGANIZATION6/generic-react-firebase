@@ -1,5 +1,5 @@
 import React from 'react'
-import NavBar from './components/Layout/NavBar'
+import NavBar from './components/Layout/Header/NavBar'
 import Template from './components/Layout/Template'
 import Cards from './components/Layout/Cards'
 import ContactUs from './components/Layout/ContactUs'

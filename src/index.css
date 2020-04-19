@@ -1,209 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* background-color: #80808052!important; */
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.jumbotron-fluid {
-  background-color: aquamarine;
-}
-
-#sticky-footer {
-  flex-shrink: none;
-}
-.cardview{
-position: relative;
-/* width: 350px; */
-padding: 0px;
-box-shadow:  0 5px 15px rgba(0,0, 0, .1);
-border-radius: 4px;
-margin: 20px;
-box-sizing: border-box;
-color: #000;
-text-align: center;
-overflow: hidden;
-}
-/* .cardview:hover{
-  transform: scale(1.2);
-
-} */
-.mailimg{
-  background-image: url('./components/Layout/mail.png');
-}
-.contactBox{
-  background: #007bff;
-  position: relative;
-  /* background-image: repeating-linear-gradient(to bottom right, #3f95ea 0%, #52d3aa 100%); */
- 
-}
-.cardContainer{
-  /* height: 50vh; */
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.contactBox::after {
-  content: '';
-  width: 100%;
-  position: absolute;
-  /* border: 1px solid black; */
-  top: -19px;
-  height: 45px;
-  z-index: -1;
-  transform: rotate(-1.7deg);
-  -ms-transform: rotate(-1.7deg);
-   -webkit-transform: rotate(-1.7deg);
-  -o-transform: rotate(-1.7deg);
-  -moz-transform: rotate(-1.7deg);
-  background: #007bff;
-  
-}
-.title{
-  color: white;
-}
-
-label{
-  color: white;
-}
-.submitBtn{
-  background: #343a40;
-}
-
- .cardview .icon {
-position: relative;
-width: 80px;
-height: 80px;
-color: #fff;
-background: #000;
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 0 auto;
-border-radius: 50%;
-font-size: 40px;
-font-weight: 700;
-transition: 1s;
-}
-.cardview .box .iconred{
-  box-shadow: 0 0 0 0 #e91e63;
-  background: #e91e63;
-}
-.cardview .box:hover .iconred{
-  box-shadow: 0 0 0 400px #e91e63; 
-  color: white; 
-}
-.cardview .box .icongreen{
-  box-shadow: 0 0 0 0 #23e629;
-  background: #23e629;
-}
-.cardview .box:hover .icongreen{
-  box-shadow: 0 0 0 400px #23e629;  
-}
-.cardview .box .iconblue{
-  box-shadow: 0 0 0 0 #f3e221;
-  background: #f3e221;
-}
-.cardview .box:hover .iconblue{
-  box-shadow: 0 0 0 400px #f3e221;  
-}
-.cardview .content{
-  position: relative;
-  z-index: 1;
-  transition: 0.5s;
-}
-.cardview .box:hover .content{
-  color: white;
-}
-
-.inputbox{
-  position: relative;
-  width: 100%;
-  height: 40px;
-margin: 30px 0 10px;
-padding: 0 10px;
-}
-.inputbox input,
-.inputbox.textarea textarea{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: transparent;
-  box-shadow: none;
-  border: none;
-  outline: none;
-  font-size: 18px;
-  padding: 0 10px;
-  z-index: 1;
-}
-
-.inputbox .text{
-  position: absolute;
-  top:0;
-  left: 0;
-  line-height: 40px;
-  font-size: 18px; 
-  padding: 0 10px;
-  display: block;
-  transition: 0.5s;
-  pointer-events: none;
-}
-
-.inputbox input:focus + .text,
-.inputbox input:valid + .text
- {
-  top:-35px;
-  left: -10px;
-}
-
-.inputbox .line{
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  background: white;
-  transition: 0.5s;
-  border-radius: 2px;
-  pointer-events: none;
-}
-
-.inputbox.textarea{
-  position: relative;
-  width: 100%;
-  height: 100px;
-  padding: 10px 0;
-}
-.inputbox.textarea textarea{
-  height: 100%;
-  resize: none;
-}
-
-.inputbox textarea:focus + .text,
-.inputbox textarea:valid + .text
- {
-  top:-35px;
-  left: -10px;
+body{margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+p , ul{margin:0 !important;}
+a{text-decoration:none !important;}
+li{list-style-type:none !important;}
+code{font-family:source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;}
+.jumbotron-fluid{background-color:aquamarine;}
+#sticky-footer{flex-shrink:none;}
+.cardview{position:relative;padding:0px;box-shadow:0 5px 15px rgba(0,0, 0, .1);border-radius:4px;margin:20px;box-sizing:border-box;color:#000;text-align:center;overflow:hidden;width:18rem;margin:0 auto;}
+.mailimg{background-image:url('./components/Layout/mail.png');}
+.contactBox{background:#007bff;position:relative;}
+.cardContainer{display:flex;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;margin-bottom:50px;}
+.contactBox::after{content:'';width:100%;position:absolute;top:-19px;height:45px;z-index:-1;transform:rotate(-1.7deg);-ms-transform:rotate(-1.7deg);-webkit-transform:rotate(-1.7deg);-o-transform:rotate(-1.7deg);-moz-transform:rotate(-1.7deg);background:#007bff;}
+.title{color:white;}
+label{color:white;}
+.submitBtn{background:#343a40;}
+.cardview .icon{position:relative;width:80px;height:80px;color:#fff;background:#000;display:flex;justify-content:center;align-items:center;margin:0 auto;border-radius:50%;font-size:40px;font-weight:700;transition:1s;}
+.cardview .box .iconred{box-shadow:0 0 0 0 #e91e63;background:#e91e63;}
+.cardview .box:hover .iconred{box-shadow:0 0 0 400px #e91e63;color:white;}
+.cardview .box .icongreen{box-shadow:0 0 0 0 #23e629;background:#23e629;}
+.cardview .box:hover .icongreen{box-shadow:0 0 0 400px #23e629;}
+.cardview .box .iconblue{box-shadow:0 0 0 0 #f3e221;background:#f3e221;}
+.cardview .box:hover .iconblue{box-shadow:0 0 0 400px #f3e221;}
+.cardview .content{position:relative;z-index:1;transition:0.5s;}
+.cardview .box:hover .content{color:white;}
+.inputbox{position:relative;width:100%;height:40px;margin:30px 0 10px;padding:0 10px;}
+.inputbox input,.inputbox.textarea textarea{position:absolute;height:100%;width:100%;background:transparent;box-shadow:none;border:none;outline:none;font-size:18px;padding:0 10px;z-index:1;}
+.inputbox .text{position:absolute;top:0;left:0;line-height:40px;font-size:18px;padding:0 10px;display:block;transition:0.5s;pointer-events:none;}
+.inputbox input:focus + .text,.inputbox input:valid + .text{top:-35px;left:-10px;}
+.inputbox .line{position:absolute;width:100%;height:2px;bottom:0;background:white;transition:0.5s;border-radius:2px;pointer-events:none;}
+.inputbox.textarea{position:relative;width:100%;height:100px;padding:10px 0;}
+.inputbox.textarea textarea{height:100%;resize:none;}
+.inputbox textarea:focus + .text,.inputbox textarea:valid + .text{top:-35px;left:-10px;}
+.inputbox input:focus ~.line,.inputbox input:valid ~.line{height:100%;}
+.inputbox textarea:focus ~.line,.inputbox textarea:valid ~.line{height:100%;}
 
 
-}
-.inputbox input:focus ~.line,
-.inputbox input:valid ~.line{
-  height: 100%;
-}
-.inputbox textarea:focus ~.line,
-.inputbox textarea:valid ~.line{
-  height: 100%;
+
+@media (min-width:768px) and (max-width:991px) {
+.cardContainer .row{flex-wrap: nowrap;}  
+.cardContainer .cardview{width: auto;min-height: 210px;height: 100%;}
+.cardContainer .cardview .card-body{padding: 10px;}
+.cardContainer .cardview .icon{width: 60px;height: 60px;font-size: 25px;margin-bottom: 10px !important;}
+.cardContainer .card-title {font-size: 18px !important;min-height: 58px;display: flex;justify-content: center;align-items: center;}
+.cardContainer .card-subtitle{font-size: 16px !important;}
+.cardContainer .card-text{font-size: 14px;}
 }
 
+@media only screen and (max-width:767px) {
+  .cardContainer .card{margin: 15px auto;}
+  .tamplateSubHeader{font-size: 20px;}
+  .tamplateHeader{font-size: 30px;}
+  .inputbox input, .inputbox.textarea textarea{font-size: 16px;}
+}
+
+
+@media only screen and (max-width:481px) {
+  .cardview .icon{height: 60px;width: 60px;font-size: 25px;}
+  .inputbox input:focus + .text, .inputbox input:valid + .text , .inputbox input, .inputbox.textarea textarea ,.card-text{font-size: 14px;}
+  .tamplateSubHeader{font-size: 16px;}
+  .card-title{font-size: 18px;}
+  .tamplateHeader{font-size: 26px;}
+}
